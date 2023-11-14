@@ -1,0 +1,23 @@
+main{
+  width: 50%;
+
+}
+form {
+  margin-top: var(--small-space);
+}
+
+.group-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-input input,
+.group-input textarea {
+
+  padding: var(--small-space) var(--normal-space);
+  border-radius: var(--radius);
+}
+
+.group-input textarea {
+    margin-bottom: var(--normal-space);
+}

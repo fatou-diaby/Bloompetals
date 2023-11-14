@@ -1,0 +1,39 @@
+main{
+  width: 80%;
+}
+
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+ 
+
+}
+
+
+.gallery img {
+  width: 250px;
+  height: 300px;
+  border: solid #ffc8dd 13px;
+}
+
+.gallery img:hover {
+  /* effet de zoom */
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+h3 {
+    margin-bottom: var(--small-space);
+    margin-top: var(--normal-space);
+}
+
+@media screen and (max-width: 544px) {
+  /*
+.grid {
+    grid-template-rows: 1fr !important;
+  }
+  */
+}

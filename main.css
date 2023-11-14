@@ -1,0 +1,168 @@
+/* 
+
+*/
+
+/* ------------------ réinitialise tous les dimensions a 0 ------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ffafcc;
+  --secondary-color: #a2d2ff;
+  --pink-light-color: #ffc8dd;
+  --text-color: #969798;
+  --white-color: #fff;
+  --dark-color: #137bdd;
+  /* -------------------------------- Font size ------------------------------- */
+  --small-font-size: 1.4rem;
+  --normal-font-size: 1.6rem;
+  --large-font-size: 2rem;
+  --xl-font-size: 3rem;
+
+  /* --------------------------------- Spaces --------------------------------- */
+  --small-space: 0.8rem;
+  --normal-space: 1.6rem;
+  --large-space: 2.4rem;
+  --xl-space: 3.2rem;
+
+  --radius: 0.8rem;
+  --main-shadow: 0px 4px 8px rgba(0, 0, 0, 0.426);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   DEFAULT                                  */
+/* -------------------------------------------------------------------------- */
+html {
+  /* 10px / 16px = 0.625 => 0.625 * 100 = 62.5 */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--pink-light-color);
+}
+section {
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: var(--xl-space);
+}
+
+section::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  background: var(--text-color);
+}
+
+/* Selection la derniere section */
+section:last-child::after {
+  display: none;
+}
+
+h1,
+h2 {
+  font-size: var(--xl-font-size);
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: var(--normal-space);
+  margin-bottom: var(--large-space);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+header {
+  background-color: #ff86b2;
+  padding: var(--xl-space);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--normal-space);
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: var(--normal-space);
+}
+
+header nav ul a {
+  color: white;
+  text-transform: uppercase  var(--large-font-size);
+ 
+}
+
+header nav form {
+  display: flex;
+  align-items: center;
+  gap: var(--normal-space);
+}
+
+header nav button, input[type="submit"] {
+  all: unset;
+  color: var(--dark-color);
+  background-color: var(--white-color);
+}
+
+header nav input,
+header nav button, input[type="submit"] {
+  padding: var(--small-space) var(--normal-space);
+  border-color: transparent;
+  border-radius: var(--radius);
+  box-shadow: var(--main-shadow);
+}
+
+header nav input {
+  min-width: 30rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Main                                    */
+/* -------------------------------------------------------------------------- */
+
+main {
+  max-width: 80%;
+  margin: auto;
+  padding: 0 var(--xl-space) var(--large-space) var(--xl-space);
+  background-color: var(--white-color);
+  margin-bottom: var(--large-space);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+footer {
+  padding: var(--large-space);
+  background-color: var(--primary-color);
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+  text-align: center;
+}

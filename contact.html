@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ------------------------------ Main CSS ------------------------------- -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- ------------------------- CSS de la page home ------------------------- -->
+    <link rel="stylesheet" href="./css/contact.css" />
+    <title>BloomPetals</title>
+  </head>
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 HEADER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          <li>
+            <a href="/entreprise.html">Entreprise</a>
+          </li>
+
+          <li>
+            <a href="/realisations.html">Realisations</a>
+          </li>
+
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+        <!-- ------------------------------- Search -------------------------------- -->
+        <form>
+          <input type="search" name="Search something" />
+          <button type="submit">Search</button>
+        </form>
+      </nav>
+    </header>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Contenu principal                            -->
+    <!-- ----------------------------------------------------------------------- -->
+    <main>
+      <h1>Nous contacter</h1>
+
+      <h2>Formulaire de contact</h2>
+      <p>
+        Que ce soit pour des conseils sur le choix de vos fleurs préférées, des
+        informations sur nos services de livraison ou toute autre question
+        florale, nous sommes à votre disposition. Remplissez le formulaire
+        ci-dessous et laissez-nous prendre soin de vos demandes d "Information
+        avec amour et expertise. <br /><br />
+        Contactez-nous
+      </p>
+
+      <form>
+        <div class="group-input">
+          <div>
+            <label for="gender_mrs"> Madame </label>
+            <label for="gender_mr"> Monsieur </label>
+          </div>
+          <div>
+            <input type="radio" id="gender_mrs" name="gender" value="mrs" /> 
+
+
+            <input type="radio" id="gender_mr" name=" gender" value="mr" />
+          </div>
+        </div>
+
+        <div class="group-input">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="group-input">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="group-input">
+          <label for="address">Adresse :</label>
+          <input type="text" id="address" name="address" />
+        </div>
+
+        <div class="group-input">
+          <label for="phone">Numéro de téléphone :</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <div class="group-input">
+          <label for="message">Message :</label>
+          <textarea rows="10" id="message" name="message" required></textarea>
+        </div>
+        <div>
+          <input type="checkbox" id="politique" name="politique" required>
+          <label for="politique">J'accepte les politiques de confidentialité de l'entreprise</label>
+        </div>
+      
+  <div>
+
+        <input type="submit" value="Envoyer" />
+      </form>
+    </main>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 FOOTER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer>
+      <p>Copyright © 2023 - Bloompetals livrent en 4h, 7 jours sur 7 même les
+        jours fériés et jours de fêtes, à domicile ou tout autre lieu dans la
+        France entière. Nos fleuristes ont du talent et nos clients sont
+        satisfaits !</p>
+    </footer>
+  </body>
+</html>
